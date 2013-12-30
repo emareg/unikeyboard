@@ -3,7 +3,7 @@ unikeyboard
 xkb keyboard layout with 8 levels for often used unicode characters
 
 
-features: 
+Features: 
 ----------
 * almost unchanged german keyboard layout (level 1 + 2)
 * greek alphabet (level 3 + 4)
@@ -15,13 +15,11 @@ features:
 The layout
 ----------
 
-
-
 	Level 1 – 4:
-	┌─────┐	Level1: ⟨key⟩				normal (außer #)
-	│ 2 4 │ Level2: Shift + ⟨key⟩			normal (außer § und ')
-	│ 1 3 │ Level3: AltGr + ⟨key⟩			Griechisch1 + Typographie1
-	└─────┛ Level4: AltGr + Shift + ⟨key⟩		Griechisch2 + Typographie2
+	┌─────┐ Level1: ⟨key⟩                           normal (except #)
+	│ 2 4 │ Level2: Shift + ⟨key⟩                   normal (except § und ')
+	│ 1 3 │ Level3: AltGr + ⟨key⟩                   greek1 + typography1
+	└─────┛ Level4: AltGr + Shift + ⟨key⟩           greek2 + typography2
 
 	┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓  ┌─────┬─────┬─────┬─────┐
 	│ ° ⁰ │ ! ‚ │ " ’ │ ' ‘ │ $ ¥ │ % ₨ │ &   │ / ⁅ │ ( ⟨ │ ) ⟩ │ = ⁆ │ ? ß │ ` ¨ ┃Backspace  ┃  │     │ /   │ *   │ -   │
@@ -41,10 +39,10 @@ The layout
 	┗━━━━━━━┻━━━━━━━┻━━━━━━━┹──────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━┛  └───────────┴─────┺━━━━━┛
 
 	Level 5 – 8:
-	┌─────┐	Level5: Caps + ⟨key⟩			Mathe1 
-	│ 6 8 │ Level6: Caps + Shift + ⟨key⟩		Mathe2 (invertiert oder erweitert Mathe1)
-	│ 5 7 │ Level7: Caps + AltGr + ⟨key⟩		Mathe3 oder Symbole
-	└─────┛ Level8: Caps + AltGr + Shift + ⟨key⟩	Alternativer Buchstabe für griechisch oder deutsch
+	┌─────┐ Level5: Caps + ⟨key⟩                    math1 
+	│ 6 8 │ Level6: Caps + Shift + ⟨key⟩            math2 (invertiert or expands math1)
+	│ 5 7 │ Level7: Caps + AltGr + ⟨key⟩            math3 or symbols
+	└─────┛ Level8: Caps + AltGr + Shift + ⟨key⟩    alternative characters
 
 	┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓  ┌─────┬─────┬─────┬─────┐
 	│ ⁰   │ ¹ ′ │ ² ″ │ ³ ‴ │ ⁴   │ ⁵ ‰ │ ⁶ ♂ │ ⁷   │ ⁸ ⌈ │ ⁹ ⌉ │ ≈ ∅ │ ⁻   │°    ┃Backspace  ┃  │     │     │     │     │
@@ -62,4 +60,3 @@ The layout
 	┃       ┃       ┃       ┃                                  ┃       ┃       ┃       ┃      ┃  │ ‰         │ ′   ┃     ┃
 	┃Ctrl   ┃Meta   ┃Alt    ┃              Space               ┃AltGr  ┃Meta   ┃Menu   ┃Ctrl  ┃  │ % ─       │ ,   ┃     ┃
 	┗━━━━━━━┻━━━━━━━┻━━━━━━━┹──────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━┛  └───────────┴─────┺━━━━━┛
-
