@@ -65,10 +65,12 @@ The Layout
 
 Install Instructions
 --------------------
-* save your old layout file:
+save your old layout file:
+
 	cp /usr/share/X11/xkb/symbols/de de_backup
 
-* replace your layout file with the one from above
+replace your layout file with the one from above
+
 	cp de /usr/share/X11/xkb/symbols/de
 
-* select “neo2“ keyboard layout in your keymap manager
+select “neo2“ keyboard layout in your keymap manager
