@@ -1,6 +1,8 @@
-unikeyboard
+UniKeyboard
 ===========
-xkb keyboard layout with 8 levels for often used unicode characters
+german xkb keyboard layout with 8 levels for often used unicode characters.
+
+It is based on the 6 level “neo-layout“ from http://www.neo-layout.org
 
 
 Features: 
@@ -12,7 +14,7 @@ Features:
 * special characters (level 8)
 
 
-The layout
+The Layout
 ----------
 
 	Level 1 – 4:
@@ -60,3 +62,13 @@ The layout
 	┃       ┃       ┃       ┃                                  ┃       ┃       ┃       ┃      ┃  │ ‰         │ ′   ┃     ┃
 	┃Ctrl   ┃Meta   ┃Alt    ┃              Space               ┃AltGr  ┃Meta   ┃Menu   ┃Ctrl  ┃  │ % ─       │ ,   ┃     ┃
 	┗━━━━━━━┻━━━━━━━┻━━━━━━━┹──────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━┛  └───────────┴─────┺━━━━━┛
+
+Install Instructions
+--------------------
+* save your old layout file:
+	cp /usr/share/X11/xkb/symbols/de de_backup
+
+* replace your layout file with the one from above
+	cp de /usr/share/X11/xkb/symbols/de
+
+* select “neo2“ keyboard layout in your keymap manager
