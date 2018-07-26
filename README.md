@@ -1,8 +1,6 @@
 UniKeyboard
 ===========
-german xkb keyboard layout with 8 levels for often used unicode characters.
-
-It is based on the 6 level “neo-layout“ from http://www.neo-layout.org
+German XKB keyboard layout with 8 levels for often used unicode characters.
 
 
 Features: 
@@ -17,6 +15,7 @@ Features:
 The Layout
 ----------
 
+```
 	Level 1 – 4:
 	┌─────┐ Level1: ⟨key⟩                           normal (except #)
 	│ 2 4 │ Level2: Shift + ⟨key⟩                   normal (except § und ')
@@ -42,7 +41,7 @@ The Layout
 
 	Level 5 – 8:
 	┌─────┐ Level5: Caps + ⟨key⟩                    math1 
-	│ 6 8 │ Level6: Caps + Shift + ⟨key⟩            math2 (invertiert or expands math1)
+	│ 6 8 │ Level6: Caps + Shift + ⟨key⟩            math2 (inverted or expands math1)
 	│ 5 7 │ Level7: Caps + AltGr + ⟨key⟩            math3 or symbols
 	└─────┛ Level8: Caps + AltGr + Shift + ⟨key⟩    alternative characters
 
@@ -53,7 +52,7 @@ The Layout
 	┃       ┃ ⌀   │ ∛   │ ∉ ⊊ │   R │ ⊥ ™ │   z │   ϑ │ ∬ J │ ∬   │ ∝   │     │ ±   ┃Enter    ┃  │ ⇕   │ ⇑   │     │     │
 	┃Tab    ┃ ℚ   │ √   │ ∈ ⊆ │ ℝ   │ ⊤   │ ℤ   │ ∞   │ ∫ ∭ │ ∫ ∭ │ ∏   │ ∝   │ ⋅   ┃         ┃  │ ↕ ┌ │ ↑ ┬ │   ┐ │     │
 	┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┲━━━━┻┓        ┃  ├─────┼─────┼─────┤     │
-	┃Caps    ┃ ∠ Å │   ſ │ ∇   │ F ϕ │ ∁   │ ∩ ℏ │ ∪   │ ⊖ ⊙ │ L ℓ │ ⇔ ↷ │ ⇒   ┃Caps ┃        ┃  │ ⇐   │ –   │ ⇒   │     │
+	┃Caps    ┃ ∠ Å │   ſ │ ∇   │ F ϕ │ ∁   │ ∩ ℏ │ ∪   │ ⊖ ⊙ │ L l │ ⇔ ↷ │ ⇒   ┃Caps ┃        ┃  │ ⇐   │ –   │ ⇒   │     │
 	┃Lock    ┃ ∠   │ ∑   │ ∂ ⌀ │ ƒ F │ ¬   │ ∧ ♮ │ ∨   │ ⊕ ⊗ │ –   │ ↔ ↶ │ → ↦ ┃Lock ┃        ┃  │ ← ├ │ ★ ┼ │ → ┤ │   │ │
 	┣━━━━━━━┳┹────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┲┻━━━━━┻━━━━━━━━┫  ├─────┼─────┼─────╆━━━━━┪
 	┃       ┃ < ☐ │ > ☑ │ ϵ ☒ │ ∁ © │ .⃗   │ ∄   │ ∇ N │ ⊢   │ ⊢   │ ∕   │ ∓ ― ┃               ┃  │ ⇔   │ ⇓   │ ⇋   ┃Enter┃
@@ -62,6 +61,14 @@ The Layout
 	┃       ┃       ┃       ┃                                  ┃       ┃       ┃       ┃      ┃  │ ‰         │ ′   ┃     ┃
 	┃Ctrl   ┃Meta   ┃Alt    ┃              Space               ┃AltGr  ┃Meta   ┃Menu   ┃Ctrl  ┃  │ % ─       │ ,   ┃     ┃
 	┗━━━━━━━┻━━━━━━━┻━━━━━━━┹──────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━┛  └───────────┴─────┺━━━━━┛
+```
+
+
+Temporary Switch
+--------------------
+	./setKeyboard.sh
+
+
 
 Install Instructions
 --------------------
@@ -74,3 +81,7 @@ replace your layout file with the one from above
 	cp de /usr/share/X11/xkb/symbols/de
 
 select “neo2“ keyboard layout in your keymap manager
+
+
+
+
