@@ -1,0 +1,7 @@
+xkb_keymap {
+	xkb_keycodes  { include "evdev+aliases(qwertz)"	};
+	xkb_types     { include "complete+vim"};
+	xkb_compat    { include "complete+caps(caps_lock)+misc(assign_shift_left_action)+level5(level5_lock)+vim"	};
+	xkb_symbols   { include "pc+unikeyboard(basis)+vim(group2)+inet(evdev)"	};
+	xkb_geometry  { include "pc(pc105)"	};
+};

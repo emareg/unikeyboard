@@ -1,0 +1,183 @@
+// based on a keyboard map from an 'xkb/symbols/de' file
+
+
+
+
+partial modifier_keys xkb_symbols "modifiers" {
+  	key <RALT> {
+   		type[Group2]="TWO_LEVEL",
+    	symbols[Group2] = [ ISO_Level3_Shift, ISO_Level3_Shift ]
+    };
+
+  	// key <LALT> {
+   	// 	type[Group2]="TWO_LEVEL",
+    // 	symbols[group2] = [ ISO_First_Group, ISO_First_Group ]
+    //};    
+
+    // to preserve controls
+    //key <LCTL> {
+    //    type[Group2]="TWO_LEVEL",
+    //    symbols[Group2] = [ Control_L, Control_L ]
+    //}; 
+
+    modifier_map Control{ <LCTL> };
+};
+
+
+
+
+// Unikeyboard
+//
+// Based on German Neo-Layout Version 2 http://www.neo-layout.org
+// adopted 2004 by Hanno Behrens <Hanno.Behrens@gmx.de>
+
+
+partial default alphanumeric_keys modifier_keys xkb_symbols "group2" {
+
+
+	// Groups:
+	name[Group2]="Vimcode_base";
+
+	include "vim(modifiers)"
+
+	// Group 2
+	// ---------------------------------------------
+	// Level 1: normal 			normal 				navigation
+	// Level 2: Shift 			shift 				navigation, visual
+	// Level 3: Mod1 			AltGr 				
+	// Level 4: Mod1+Shift 		AltGr+Shift 		Α-Ω
+
+
+    // Alphanumeric-keys
+    // ===============
+    key.type[Group2] = "EIGHT_LEVEL_CTRL";
+
+
+
+    // Number row
+    // --------------------------------------------------------------
+    key <TLDE> {
+        symbols[Group2] = [ Home,             degree,                  U2103,                   zerosuperior,           zerosubscript,           zerosuperior,             U2103,                   NoSymbol                 ] };
+
+    key <AE01> {
+        symbols[Group2] = [ 1,                       exclam,                  doublelowquotemark,      singlelowquotemark,     onesubscript,            onesuperior,              notsign,                 U2032                 ] };
+    key <AE02> {
+        symbols[Group2] = [ 2,                       quotedbl,                leftdoublequotemark,     rightsinglequotemark,   twosubscript,            twosuperior,              onehalf,                 U2033                 ] };
+    key <AE03> {
+        symbols[Group2] = [ 3,                       apostrophe,              rightdoublequotemark,    leftsinglequotemark,    threesubscript,          threesuperior,            threequarters,           U2034                 ] };
+    key <AE04> {
+        symbols[Group2] = [ 4,                       End,                  EuroSign,                yen,                    U2084,                   U2074,                    onequarter,              NoSymbol                 ] };
+    key <AE05> {
+        symbols[Group2] = [ 5,                       percent,                 sterling,                RupeeSign,              U2085,                   U2075,                    NoSymbol,                U2030                  ] };
+    key <AE06> {
+        symbols[Group2] = [ 6,                       ampersand,               NoSymbol,                NoSymbol,               U2086,                   U2076,                    femalesymbol,            malesymbol               ] };
+
+    key <AE07> {
+        symbols[Group2] = [ 7,                       slash,                   braceleft,               U2045,                  U2087,                   U2077,                    U00F7,                   NoSymbol                 ] };
+    key <AE08> {
+        symbols[Group2] = [ 8,                       parenleft,               bracketleft,             U27E8,                  U2088,                   U2078,                    U230A,                   U2308                 ] };
+    key <AE09> {
+        symbols[Group2] = [ 9,                       parenright,              bracketright,            U27E9,                  U2089,                   U2079,                    U230B,                   U2309                 ] };
+    key <AE10> {
+        symbols[Group2] = [ 0,                       equal,                   braceright,              U2046,                  notequal,                approxeq,                 identical,               emptyset                 ] };
+
+    key <AE11> {
+        symbols[Group2] = [ ssharp,                  question,                backslash,               U1E9E,                  U207A,                   U207B,                    hyphen,                  NoSymbol                 ] };
+    key <AE12> {
+        symbols[Group2] = [ dead_acute,              dead_grave,              dead_macron,             dead_diaeresis,         dead_cedilla,            dead_abovering,          dead_dasia,               dead_belowdot            ] };
+
+
+    // Tab as Multi_key (Compose)
+    // --------------------------------------------------------------
+    key  <TAB> {
+    	symbols[Group2] = [ Tab,  ISO_Left_Tab, Multi_key,    Tab, Tab, Tab, Tab, ISO_Level5_Lock  ] };
+	key <AD01> { // q
+    	symbols[Group2] = [ Escape, ISO_Left_Tab,    U211A,    U2300,    at,   q, Q, NoSymbol  ] };
+    key <AD02> { // w
+    	symbols[Group2] = [ Next_Virtual_Screen,    VoidSymbol,    squareroot,   cuberoot, w, W, NoSymbol, NoSymbol  ] };
+    key <AD03> { // e
+    	symbols[Group2] = [ End,    VoidSymbol,    U2208,    U2209,    e,  E, U2286,    U228A  ] };
+    key <AD04> { // r
+    	symbols[Group2] = [ BackSpace, VoidSymbol, Greek_rho, U03F1, r, R, U2102, U211C ] };
+    key <AD05> { // t
+    	symbols[Group2] = [ VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol, t, T ] };
+    key <AD06> { // z
+    	symbols[Group2] = [ VoidSymbol, VoidSymbol, VoidSymbol, NoSymbol, z, Z, VoidSymbol, VoidSymbol ] };
+    key <AD07> { // u
+    	symbols[Group2] = [ Prior,    Page_Up,    U221E,    U27E9,    u,  U,  NoSymbol, U03D1  ] };
+    key <AD08> { // i
+    	symbols[Group2] = [ ISO_Prev_Group, VoidSymbol, Pointer_Button1, VoidSymbol, i, I, U222D, U2111 ] };
+    key <AD09> { // o
+    	symbols[Group2] = [ ISO_Left_Tab, VoidSymbol, Greek_omega, Greek_OMEGA, o, O, U2230, NoSymbol ] };
+    key <AD10> { // p
+    	symbols[Group2] = [ ISO_Left_Tab, VoidSymbol, Greek_pi, Greek_PI,  p, P, NoSymbol, NoSymbol ] };
+
+
+    // Middle row
+    // --------------------------------------------------------------
+    key <AC01> { // a
+    	symbols[Group2] = [ ISO_Fast_Cursor_Left, ISO_Fast_Cursor_Up, Greek_alpha, Greek_ALPHA, a, A, NoSymbol, U212B ] };
+    key <AC02> { // s
+    	symbols[Group2] = [ ISO_Fast_Cursor_Right, S, s, Greek_SIGMA, s, S, integral, U017F ] };
+    key <AC03> { // d
+    	symbols[Group2] = [ Next, Delete, partialderivative, nabla, d,  D,  U2300,   NoSymbol  ] 
+    };
+    key <AC04> { // f
+    	symbols[Group2] = [ f,   VoidSymbol,    function, U2131,    f,    F,    U2109,    U03D5 ] 
+    };
+    key <AC05> { // g
+    	symbols[Group2] = [ Pointer_Button1,  Pointer_EnableKeys,    notsign,  U2201,    g,  G,  NoSymbol, NoSymbol  ] };
+
+    key <AC06> { // h
+    	symbols[Group2] = [ Left,    VoidSymbol,    Pointer_Left,   intersection, h,  H,    U266E,    U210F ] };
+    
+    key <AC07> { // j
+        symbols[Group1] = [ j,  J,  Escape,  ISO_Next_Group,  logicalor,  union, NoSymbol, NoSymbol ],
+		symbols[Group2] = [ Down, VoidSymbol, Pointer_Down, j, J, NoSymbol, NoSymbol ]
+		//symbols[Group2] = [ Left, VoidSymbol, a, b, j, J, NoSymbol, NoSymbol ] 
+	};
+    key <AC08> { // k
+    	symbols[Group2] = [ Up, VoidSymbol, Pointer_Up, k, K, NoSymbol, NoSymbol ] 
+    	//symbols[Group2] = [ Down, NoSymbol, Pointer_Up, k, K, NoSymbol, NoSymbol ] 
+    };
+    key <AC09> { // l
+    	symbols[Group2] = [ Right,    VoidSymbol,    Pointer_Right,    U2112,    l, L, NoSymbol, U2113  ] 
+    };
+    key <AC10> { // ö
+    	symbols[Group2] = [ VoidSymbol, VoidSymbol, section, U2020, U2194, U21D4, U21B6, U21B7 ] };
+    key <AC11> { // ä
+    	symbols[Group2] = [ VoidSymbol, VoidSymbol, numbersign, U2021, rightarrow, U21D2, U21A6, NoSymbol ] };    
+
+    // Bottom row
+    // --------------------------------------------------------------
+    key <LSGT> {
+    	symbols[Group2] = [ ISO_Last_Group, VoidSymbol, lessthanequal, U226A, bar, U2016, brokenbar, U2610 ] };    
+    key <AB01> { // y
+    	symbols[Group2] = [ ISO_Fast_Cursor_Up, Y, Greek_psi, Greek_PSI, y, Y, U2714, U2611 ] };
+    key <AB02> { // x
+    	symbols[Group2] = [ ISO_Fast_Cursor_Down, X, Greek_xi, Greek_XI, x, X, U2718, U2612 ] };
+    key <AB03> { // c
+    	symbols[Group2] = [ Escape,  VoidSymbol,   Pointer_Right,  U2201,  c,  C,    U2103,  copyright ] };
+    key <AB04> { // v
+    	symbols[Group2] = [ VoidSymbol,  VoidSymbol,  U2200,  U20D7,  v, V, NoSymbol, NoSymbol  ] };
+    key <AB05> { // b
+    	symbols[Group2] = [ Home,  VoidSymbol,  U2203,  U2204, b, B,  NoSymbol, NoSymbol  ] };
+    key <AB06> { // n 
+    	symbols[Group2] = [ Undo,  N, Greek_nu, NoSymbol, n, N, U266F, U2135 ] };
+    key <AB07> { // m
+    	symbols[Group2] = [ Menu, M, Pointer_EnableKeys, NoSymbol, m, M, NoSymbol, NoSymbol ] };
+    key <AB08> { //,
+    	symbols[Group2] = [ VoidSymbol, VoidSymbol, U2022, U2023, U22A2, U22AC, NoSymbol, NoSymbol ] };
+    key <AB09> { //.
+    	symbols[Group2] = [ VoidSymbol, VoidSymbol, ellipsis, periodcentered, U22C5, U2215, NoSymbol, NoSymbol ] };
+
+    // Menu
+	key <MENU> {
+		symbols[Group2] = [ ISO_Next_Group,    ISO_Next_Group,    U2295,    U2296,    Greek_kappa,  NoSymbol, U2297,    U2299 ] 
+	};
+
+
+    // Space key
+    key <SPCE> {
+    	symbols[Group2] = [ space, space, space,  nobreakspace,  space,  U200A, U202F, U2002 ] };
+};

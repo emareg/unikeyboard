@@ -1,0 +1,21 @@
+partial xkb_types "vim" {
+	type "EIGHT_LEVEL_CTRL" {
+        modifiers = Shift+Control+LevelThree;
+	map[None] = Level1;
+	map[Shift] = Level2;
+	map[LevelThree] = Level3;
+	map[Shift+LevelThree] = Level4;
+	map[Control] = Level5;
+	map[Shift+Control] = Level6;
+	map[LevelThree+Control] = Level7;
+	map[Shift+LevelThree+Control] = Level8;
+	level_name[Level1] = "Base";
+	level_name[Level2] = "Shift";
+	level_name[Level3] = "Alt Base";  
+	level_name[Level4] = "Shift Alt";  
+	level_name[Level5] = "X";
+	level_name[Level6] = "X Shift";
+	level_name[Level7] = "X Alt Base";
+	level_name[Level8] = "X Shift Alt";
+    };
+};

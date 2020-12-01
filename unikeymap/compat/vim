@@ -1,0 +1,62 @@
+default partial xkb_compatibility "default"  {
+
+    virtual_modifiers LevelThree,AltGr,Alt;
+
+	interpret.repeat= False;
+	setMods.clearLocks= True;
+	latchMods.clearLocks= True;
+	latchMods.latchToLock= True;
+
+
+
+	indicator "Caps Lock" {
+    	!allowExplicit;
+		modifiers = None;
+		whichGroupState = Locked;
+       	groups=All-group1;
+   };
+
+
+    interpret Control_L {
+        action = SetMods(modifiers=Control);
+    };
+
+
+	interpret ISO_Group_Shift {
+		action = SetMods(modifiers=Mod1);
+    };
+
+	interpret ISO_Left_Tab {
+		action = RedirectKey(keycode = <TAB>, modifiers=Shift);
+    };
+
+    interpret ISO_Fast_Cursor_Left {
+    	action = RedirectKey(keycode = <TAB>, modifiers=Control+Shift);
+    };
+
+    interpret ISO_Fast_Cursor_Right {
+    	action = RedirectKey(keycode = <TAB>, modifiers=Control);
+    };
+
+    interpret ISO_Fast_Cursor_Up {
+    	action = RedirectKey(keycode = <TAB>, modifiers=Mod1);
+    };
+    interpret ISO_Fast_Cursor_Down {  
+    	action = RedirectKey(keycode = <TAB>, modifiers=Mod1+Shift);
+    };
+
+    // Mouse	
+    interpret Pointer_Left { 
+		action = MovePtr(x=-5,y= +0); 
+    };
+    interpret Pointer_Down { 
+		action = MovePtr(x=+0,y= +5); 
+    };
+    interpret Pointer_Up { 
+		action = MovePtr(x=+0,y= -5); 
+    };
+    interpret Pointer_Right { 
+		action = MovePtr(x=+5,y= +0); 
+    };
+
+};
