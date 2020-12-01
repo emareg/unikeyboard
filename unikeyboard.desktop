@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=UniKeyBoard
+Comment=XKB keyboard layout with 8 levels for often used unicode characters.
+Exec=bash -c '$HOME/.config/xkb/unikeymap/setUniKeyMap.sh'
+Icon=keyboard
+Terminal=false
+X-GNOME-Autostart-enabled=true

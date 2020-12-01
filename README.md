@@ -1,10 +1,9 @@
-UniKeyboard
-===========
+# UniKeyBoard
+
 German XKB keyboard layout with 8 levels for often used unicode characters.
 
 
-Features: 
-----------
+## Features: 
 * almost unchanged german keyboard layout (level 1 + 2)
 * greek alphabet (level 3 + 4)
 * typographical characters (level 3 + 4) like — „ “ ” …
@@ -12,8 +11,11 @@ Features:
 * special characters (level 8)
 
 
-The Layout
-----------
+## Keyboard Layout
+
+The 8 levels are shown in the following two diagrams. The first one is also availbe as SVG file:
+![Layout](img/unikeyboard.svg)
+
 
 ```
 	Level 1 – 4:
@@ -26,7 +28,7 @@ The Layout
 	│ ° ⁰ │ ! ‚ │ " ’ │ ' ‘ │ $ ¥ │ % ₨ │ &   │ / ⁅ │ ( ⟨ │ ) ⟩ │ = ⁆ │ ? ß │ ` ¨ ┃Backspace  ┃  │     │ /   │ *   │ -   │
 	│ ^ C │ 1 „ │ 2 “ │ 3 ” │ 4 € │ 5 £ │ 6   │ 7 { │ 8 [ │ 9 ] │ 0 } │ ß \ │ ´   ┃           ┃  │     │ /   │ *   │ -   │
 	┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫  ├─────┼─────┼─────┼─────┤
-	┃       ┃ Q   │ W   │ Ε € │ R ϱ │ T   │ Z   │ U Θ │ I   │ O Ω │ P Π │ Ü ▪ │ * ± ┃Enter    ┃  │ ⚠   │ ⚡   │ ⚑   │     │
+	┃       ┃ Q   │ W   │ Ε € │ R ϱ │ T   │ Z   │ U Θ │ I   │ O Ω │ P Π │ Ü ▪ │ * ± ┃Enter    ┃  │ ⚠   │ ⚡  │ ⚑   │     │
 	┃Tab    ┃ q @ │ w   │ e ε │ r ρ │ t τ │ z ζ │ u θ │ i i │ o ω │ p π │ ü ' │ + ~ ┃         ┃  │ 7   │ 8   │ 9   │     │
 	┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┲━━━━┻┓        ┃  ├─────┼─────┼─────┤     │
 	┃Caps    ┃ A Α │ S Σ │ D Δ │ F Φ │ G Γ │ H   │ J   │ K   │ L Λ │ Ö † │ Ä ‡ ┃Caps ┃        ┃  │ ☮   │ ♻   │ ☢   │ +   │
@@ -64,24 +66,21 @@ The Layout
 ```
 
 
-Temporary Switch
---------------------
-	./setKeyboard.sh
+## Temporary Switch to UniKeyBoard
+In the root of this repo run
+```bash
+xkbcomp -Iunikeymap unikeymap/unikeymap $DISPLAY
+```
+If you want to switch back, run `setxkbmap de`
 
 
 
-Install Instructions
---------------------
-save your old layout file:
+## Install Instructions
+Use the `install.sh` which will do two things: 
+1. copies the `unikeymap` folder to `~/.config/xkb/`
+2. copies the Desktop file to `~/.config/autostart/` and marks it as executable.
 
-	cp /usr/share/X11/xkb/symbols/de de_backup
-
-replace your layout file with the one from above
-
-	cp de /usr/share/X11/xkb/symbols/de
-
-select “neo2“ keyboard layout in your keymap manager
-
-
+The desktop file will automatically run `~/.config/xkb/unikeymap/setUniKeyMap.sh`.
+If you want to use your old layout, remove the files and re-login or run `setxkbmap de`
 
 
