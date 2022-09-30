@@ -84,3 +84,17 @@ The desktop file will automatically run `~/.config/xkb/unikeymap/setUniKeyMap.sh
 If you want to use your old layout, remove the files and re-login or run `setxkbmap de`
 
 
+	┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
+	│ HOM │ 1   │ 2   │ 3   │ 4   │ 5   │ 6   │ 7   │ 8   │ 9   │ 0   │ ß \ │ ´   ┃           ┃
+	┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
+	┃Tab    ┃ ESC │  sW │_END │ rep │ to  │ undo│ Pg↑ │  ↑  │ Pg↓ │_newL│     │zoom+┃         ┃
+	┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┲━━━━┻┓        ┃
+	┃Caps    ┃ _WE │scrol│_sW  │find │goto │ ←←  │  ←  │ ↓   │ →   │ →→  │     ┃Caps ┃        ┃
+	┣━━━━━━━┳┹────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┲┻━━━━━┻━━━━━━━━┫
+	┃Shift  ┃u/ind│ dupL│_cut │ copy│paste│_HOME│ next│mouse│unind│ ind │zoom-┃Shift          ┃
+	┣━━━━━━━╋━━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴──┲━━┷━━━━┳┷━━━━━┻┳━━━━━━━┳━━━━━━┫
+	┃Ctrl   ┃Meta   ┃Alt    ┃         _Exit VIM Mode           ┃AltGr  ┃Meta   ┃Menu   ┃Ctrl  ┃
+	┗━━━━━━━┻━━━━━━━┻━━━━━━━┹──────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━┛
+
+_: leaves VIM mode
+.: selects
