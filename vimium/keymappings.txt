@@ -1,0 +1,29 @@
+# paste this to Chrome → Vimium → Settings
+# Insert your preferred key mappings here.
+unmap K
+
+map j scrollLeft
+map i scrollUp
+map k scrollDown
+map l scrollRight
+
+map u scrollPageUp
+map I scrollPageUp
+map o scrollPageDown
+map K scrollPageDown
+
+map U scrollFullPageUp
+map O scrollFullPageDown
+
+
+map w removeTab
+
+map L goForward
+map J goBack
+map Ö nextTab
+map H previousTab
+
+# map <left> scrollLeft
+# map <up> scrollUp
+# map <down> scrollDown
+# map <right> scrollRight
